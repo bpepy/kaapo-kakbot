@@ -34,6 +34,7 @@ var mess=message.content.toLowerCase();
 		var kak1 = kak.substring(0,5);
 		var kak2 = kak.substring(5);
 		message.channel.send(kak1+' hey '+kak2)
+		console.log(kak);
 	}
             break;
      }
