@@ -29,11 +29,8 @@ var mess=message.content.toLowerCase();
 	else if ((wordInString(mess,'praise be')== 1)) {
 		message.channel.send('Praise be <:praisebe:342071963721924630>');
   	}
-	else if (mess.substring(0,6) === 'qwerty') {
-		var kak = message.content.substring(6);
-		var kak1 = kak.substring(0,5);
-		var kak2 = kak.substring(5);
-		message.channel.send(kak1+' hey '+kak2)
+	else if (mess.substring(0,4) === 'test') {
+		var kak = message.content.substring(4);
 		console.log(kak);
 	}
             break;
