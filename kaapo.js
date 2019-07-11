@@ -23,7 +23,7 @@ var mess=message.content.toLowerCase();
 		message.channel.send('Its a nice city.');
 	}
   	else if (mess.substring(0,4) === 'wow-') {
-		var what = message.content.substring(5)
+		var what = message.content.substring(4)
     		message.channel.send('Its a nice '+what+'.');
   	}
 	else if ((wordInString(mess,'praise be')== 1)) {
