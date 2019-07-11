@@ -1,2 +1,2 @@
 
-worker: node hulkbot.js
+worker: node kaapo.js
