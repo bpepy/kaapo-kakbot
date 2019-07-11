@@ -27,8 +27,14 @@ var mess=message.content.toLowerCase();
     		message.channel.send('Its a nice '+what+'.');
   	}
 	else if ((wordInString(mess,'praise be')== 1)) {
-		message.channel.send('Praise be :praisebe:');
+		message.channel.send('Praise be <:praisebe:342071963721924630>');
   	}
+	else if (message.content.toLowerCase() === 'qwerty') {
+		var kak = message.content.substring(6);
+		var kak1 = kak.substring(0,5);
+		var kak2 = kak.substring(5);
+		message.channel.send(kak1+' hey '+kak2)
+	}
             break;
      }
 });
