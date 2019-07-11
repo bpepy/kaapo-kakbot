@@ -6,6 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    switch(message.author.bot) {
+	case true:
+	break;
+	case false:
 
 function wordInString(s, word){
   return new RegExp( '\\b' + word + '\\b', 'i').test(s);
@@ -22,7 +26,6 @@ var mess=message.content.toLowerCase();
 		message.channel.send('Praise be :praisebe:');
   	    }
             break;
-         }
      }
 });
 
