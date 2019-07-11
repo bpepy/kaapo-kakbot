@@ -20,11 +20,11 @@ function wordInString(s, word){
 var mess=message.content.toLowerCase();
 
 	if (message.content.toLowerCase() === 'wow') {
-		message.channel.send('Its a nice city.');
+		message.channel.send('Wow, it\'s a nice city.');
 	}
   	else if (mess.substring(0,4) === 'wow-') {
 		var what = message.content.substring(4)
-    		message.channel.send('Its a nice '+what+'.');
+    		message.channel.send('Wow, it\'s a nice '+what+'.');
   	}
 	else if ((wordInString(mess,'praise be')== 1)) {
 		message.channel.send('Praise be <:praisebe:591786087219724288>');
