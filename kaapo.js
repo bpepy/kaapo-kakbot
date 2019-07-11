@@ -19,8 +19,8 @@ function wordInString(s, word){
 
 var mess=message.content.toLowerCase();
 
-  if (mess.substring(0,3) === 'wow') {
-    	    message.channel.send('It's a nice city.');
+  	if (mess.substring(0,3) === 'wow') {
+    	    message.channel.send('Its a nice city.');
   	    }
 	else if ((wordInString(mess,'praise be')== 1)) {
 		message.channel.send('Praise be :praisebe:');
