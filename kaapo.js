@@ -19,12 +19,16 @@ function wordInString(s, word){
 
 var mess=message.content.toLowerCase();
 
-  	if (mess.substring(0,3) === 'wow') {
-    	    message.channel.send('Its a nice city.');
-  	    }
+	if (message.content.toLowerCase() === 'wow') {
+		message.channel.send('Its a nice city.');
+	}
+  	else if (mess.substring(0,4) === 'wow-') {
+		var what = message.content.substring(5)
+    		message.channel.send('Its a nice '+what+'.');
+  	}
 	else if ((wordInString(mess,'praise be')== 1)) {
 		message.channel.send('Praise be :praisebe:');
-  	    }
+  	}
             break;
      }
 });
