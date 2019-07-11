@@ -27,7 +27,7 @@ var mess=message.content.toLowerCase();
     		message.channel.send('Its a nice '+what+'.');
   	}
 	else if ((wordInString(mess,'praise be')== 1)) {
-		message.channel.send('Praise be <:praisebe:342071963721924630>');
+		message.channel.send('Praise be <:praisebe:591786087219724288>');
   	}
 	else if (mess.substring(0,4) === 'test') {
 		var kak = message.content.substring(4);
