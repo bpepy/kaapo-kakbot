@@ -20,7 +20,7 @@ function wordInString(s, word){
 var mess=message.content.toLowerCase();
 
 	if (message.content.toLowerCase() === 'wow') {
-		message.channel.send('Wow, it\'s a nice city.');
+		message.channel.send('It\'s a nice city.');
 	}
   	else if (mess.substring(0,4) === 'wow-') {
 		var what = message.content.substring(4)
@@ -29,9 +29,18 @@ var mess=message.content.toLowerCase();
 	else if ((wordInString(mess,'praise be')== 1)) {
 		message.channel.send('Praise be <:praisebe:591786087219724288>');
   	}
-	else if (mess.substring(0,4) === 'test') {
-		var kak = message.content.substring(4);
-		console.log(kak);
+	else if ((wordInString(mess,'just arrived in new york')== 1) || (wordInString(mess,'just arrive in new york')== 1) || (wordInString(mess,'just arrive in ny')== 1) || (wordInString(mess,'just arrive in nyc')== 1) || (wordInString(mess,'just arrived in ny')== 1) || (wordInString(mess,'just arrived in nyc')== 1)) {
+		message.channel.send('Wow, it\'s a nice city.');
+	}
+	else if ((wordInString(mess,'just arrived in')== 1) {
+		var loc = message.content.indexOf('just arrived in');
+		var place = message.content.substring(loc);
+		message.channel.send('Wow, it\'s a nice '+place+'.');
+	}
+	else if ((wordInString(mess,'just arrive in')== 1)) {
+		var loc = message.content.indexOf('just arrive in');
+		var place = message.content.substring(loc);
+		message.channel.send('Wow, it\'s a nice '+place+'.');
 	}
             break;
      }
