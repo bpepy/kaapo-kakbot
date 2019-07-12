@@ -42,6 +42,11 @@ var mess=message.content.toLowerCase();
 		var place = message.content.substring(loc + 15);
 		message.channel.send('Wow, it\'s a nice '+place+'.');
 	}
+	else if ((wordInString(mess,'just arrived in new jersey')== 1) || (wordInString(mess,'just arrive in new jersey')== 1) || (wordInString(mess,'just arrive in nj')== 1) || (wordInString(mess,'just arrive in nj')== 1) || (wordInString(mess,'just arrived in philly')== 1) || (wordInString(mess,'just arrived in philly')== 1) || (wordInString(mess,'just arrived in philadelphia')== 1) || (wordInString(mess,'just arrived in philadelphia')== 1)) {
+		var loc = message.content.indexOf('just arrive in');
+		var place = message.content.substring(loc + 15);
+		message.channel.send('Wow, it\'s a shit hole');
+	}
             break;
      }
 });
