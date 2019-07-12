@@ -32,6 +32,11 @@ var mess=message.content.toLowerCase();
 	else if ((wordInString(mess,'just arrived in new york')== 1) || (wordInString(mess,'just arrive in new york')== 1) || (wordInString(mess,'just arrive in ny')== 1) || (wordInString(mess,'just arrive in nyc')== 1) || (wordInString(mess,'just arrived in ny')== 1) || (wordInString(mess,'just arrived in nyc')== 1)) {
 		message.channel.send('Wow, it\'s a nice city.');
 	}
+	else if ((wordInString(mess,'just arrived in new jersey')== 1) || (wordInString(mess,'just arrive in new jersey')== 1) || (wordInString(mess,'just arrive in nj')== 1) || (wordInString(mess,'just arrive in nj')== 1) || (wordInString(mess,'just arrived in philly')== 1) || (wordInString(mess,'just arrived in philly')== 1) || (wordInString(mess,'just arrived in philadelphia')== 1) || (wordInString(mess,'just arrived in philadelphia')== 1)) {
+		var loc = message.content.indexOf('just arrive in');
+		var place = message.content.substring(loc + 15);
+		message.channel.send('Wow, it\'s a shit hole');
+	}
 	else if ((wordInString(mess,'just arrived in')== 1)) {
 		var loc = message.content.indexOf('just arrived in');
 		var place = message.content.substring(loc + 16);
@@ -42,11 +47,7 @@ var mess=message.content.toLowerCase();
 		var place = message.content.substring(loc + 15);
 		message.channel.send('Wow, it\'s a nice '+place+'.');
 	}
-	else if ((wordInString(mess,'just arrived in new jersey')== 1) || (wordInString(mess,'just arrive in new jersey')== 1) || (wordInString(mess,'just arrive in nj')== 1) || (wordInString(mess,'just arrive in nj')== 1) || (wordInString(mess,'just arrived in philly')== 1) || (wordInString(mess,'just arrived in philly')== 1) || (wordInString(mess,'just arrived in philadelphia')== 1) || (wordInString(mess,'just arrived in philadelphia')== 1)) {
-		var loc = message.content.indexOf('just arrive in');
-		var place = message.content.substring(loc + 15);
-		message.channel.send('Wow, it\'s a shit hole');
-	}
+	
             break;
      }
 });
