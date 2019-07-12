@@ -32,7 +32,7 @@ var mess=message.content.toLowerCase();
 	else if ((wordInString(mess,'just arrived in new york')== 1) || (wordInString(mess,'just arrive in new york')== 1) || (wordInString(mess,'just arrive in ny')== 1) || (wordInString(mess,'just arrive in nyc')== 1) || (wordInString(mess,'just arrived in ny')== 1) || (wordInString(mess,'just arrived in nyc')== 1)) {
 		message.channel.send('Wow, it\'s a nice city.');
 	}
-	else if ((wordInString(mess,'just arrived in')== 1) {
+	else if ((wordInString(mess,'just arrived in')== 1)) {
 		var loc = message.content.indexOf('just arrived in');
 		var place = message.content.substring(loc);
 		message.channel.send('Wow, it\'s a nice '+place+'.');
