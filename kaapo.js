@@ -38,12 +38,12 @@ var mess=message.content.toLowerCase();
 		message.channel.send('Wow, it\'s a shit hole');
 	}
 	else if ((wordInString(mess,'just arrived in')== 1)) {
-		var loc = message.content.indexOf('just arrived in');
+		var loc = mess.indexOf('just arrived in');
 		var place = message.content.substring(loc + 16);
 		message.channel.send('Wow, it\'s a nice '+place+'.');
 	}
 	else if ((wordInString(mess,'just arrive in')== 1)) {
-		var loc = message.content.indexOf('just arrive in');
+		var loc = mess.indexOf('just arrive in');
 		var place = message.content.substring(loc + 15);
 		message.channel.send('Wow, it\'s a nice '+place+'.');
 	}
