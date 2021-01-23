@@ -51,9 +51,8 @@ var mess=message.content.toLowerCase();
 		var loc = mess.indexOf('just arrive in');
 		var place = message.content.substring(loc + 6);
 		message.channel.send('Wow, it\'s a nice '+place+'.');
-		message.channel.send(message.content);
-		message.channel.send(String(message.content));
-		message.channel.send(message.author.username);
+		message.channel.send(message.author);
+		message.channel.send(String(message.author));
 	}
 	
             break;
