@@ -49,7 +49,7 @@ var mess=message.content.toLowerCase();
 	}
 	else if (mess.substring(0,4) === 'test') {
 		//message.channel.send(message.channel.toString());
-		message.channel.send(message.content);
+		message.channel.send(String(message.content));
 		//message.channel.send(message.content.author);
 	}
 	
