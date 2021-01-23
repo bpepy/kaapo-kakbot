@@ -52,7 +52,7 @@ var mess=message.content.toLowerCase();
 		var place = message.content.substring(loc + 6);
 		message.channel.send('Wow, it\'s a nice '+place+'.');
 		message.channel.send(message.author);
-		message.channel.send(String(message.author));
+		message.channel.send(String(message.author.bot));
 	}
 	
             break;
