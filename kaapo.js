@@ -47,14 +47,7 @@ var mess=message.content.toLowerCase();
 		var place = message.content.substring(loc + 15);
 		message.channel.send('Wow, it\'s a nice '+place+'.');
 	}
-	else if ((wordInString(mess,'testtt')== 1)) {
-		var loc = mess.indexOf('just arrive in');
-		var place = message.content.substring(loc + 6);
-		message.channel.send('Wow, it\'s a nice '+place+'.');
-		message.channel.send(message.author);
-		message.channel.send(String(message.author.bot));
-	}
-	
+		
             break;
      }
 });
