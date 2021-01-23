@@ -6,10 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    switch(message.author.bot) {
-	case true:
-	break;
-	case false:
+    //switch(message.author.bot) {
+	//case true:
+	//break;
+	//case false:
 
 function wordInString(s, word){
   return new RegExp( '\\b' + word + '\\b', 'i').test(s);
@@ -46,9 +46,6 @@ var mess=message.content.toLowerCase();
 		var loc = mess.indexOf('just arrive in');
 		var place = message.content.substring(loc + 15);
 		message.channel.send('Wow, it\'s a nice '+place+'.');
-	}
-	else if ((wordInString(mess,'testt')== 1)) {
-		message.channel.send('+message.author.bot+');
 	}
 	
             break;
