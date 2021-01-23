@@ -48,8 +48,7 @@ var mess=message.content.toLowerCase();
 		message.channel.send('Wow, it\'s a nice '+place+'.');
 	}
 	else if ((wordInString(mess,'testt')== 1)) {
-		var bot = message.author.bot
-		message.channel.send('+bot+');
+		message.channel.send('+message.author.bot+');
 	}
 	
             break;
