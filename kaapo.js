@@ -47,10 +47,10 @@ var mess=message.content.toLowerCase();
 		var place = message.content.substring(loc + 15);
 		message.channel.send('Wow, it\'s a nice '+place+'.');
 	}
-	else if (mess.substring(0,4) === 'test') {
-		//message.channel.send(message.channel.toString());
-		message.channel.send(String(message.content));
-		//message.channel.send(message.content.author);
+	else if ((wordInString(mess,'testt')== 1)) {
+		var loc = mess.indexOf('just arrive in');
+		var place = message.content.substring(loc + 6);
+		message.channel.send('Wow, it\'s a nice '+place+'.');
 	}
 	
             break;
